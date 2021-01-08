@@ -31,22 +31,14 @@ Welcome to [my Github](https://github.com/Djokovic0311 "Section Link").
    - First nested list item
      - Second nested list item
 
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [x] Lab 0
+- [ ] Lab 1
+- [ ] Lab 2
 - [ ] \(Optional) Open a followup issue
 
-@octocat :smile: This PR looks great - it's ready to merge! :blush:
+@oNovak :smile: Fight for AO :blush:
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+[Picture 1](./Part2-git1.png)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Djokovic0311/Djokovic0311.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![](https://github.com/Djokovic0311/Djokovic0311.github.io/raw/add-read-me/Part2-git1.png) 
