@@ -14,29 +14,29 @@
 >Shanghai
 
 ```
-git status
-git add
-git commit
+print("Hello world")
 ```
 Welcome to [my Github](https://github.com/Djokovic0311 "Section Link").
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+- Novak Djokovic
+- Roger Federer
+- Rafel Nadal
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. Novak Djokovic
+2. Roger Federer
+3. Rafel Nadal
 
-```markdown
-Syntax highlighted code block
+1. First list item
+   - First nested list item
+     - Second nested list item
 
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+- [ ] \(Optional) Open a followup issue
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-
+@octocat :smile: This PR looks great - it's ready to merge! :blush:
 
 [Link](url) and ![Image](src)
 ```
