@@ -18,7 +18,7 @@ git status
 git add
 git commit
 ```
-Welcome to [my Github](https://github.com/Djokovic0311 "悬停显示").
+Welcome to [my Github](https://github.com/Djokovic0311 "Section Link").
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
