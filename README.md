@@ -6,9 +6,13 @@
 #### Header 2
 
 **Bold** and _Italic_ and `Code` text
+
 *Italicized*
+
 ~~Mistaken~~
+
 **This text is _extremely_ important**
+
 ***All this text is important***
 
 >Shanghai
@@ -18,6 +22,7 @@ print("Hello world")
 ```
 Welcome to [my Github](https://github.com/Djokovic0311 "Section Link").
 
+Link: [https://github.com/Djokovic0311](https://github.com/Djokovic0311 "Section Link").
 
 - Novak Djokovic
 - Roger Federer
@@ -39,6 +44,11 @@ Welcome to [my Github](https://github.com/Djokovic0311 "Section Link").
 @oNovak :smile: Fight for AO :blush:
 
 
+### Relative Link:
 [Picture 1](./Part2-git1.png)
 
 ![](https://github.com/Djokovic0311/Djokovic0311.github.io/raw/add-read-me/Part2-git1.png) 
+
+![](https://github.com/Djokovic0311/Djokovic0311.github.io/raw/add-read-me/Part2-git2.png) 
+
+![](https://github.com/Djokovic0311/Djokovic0311.github.io/raw/add-read-me/Part2-VS.png) 
