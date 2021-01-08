@@ -1,6 +1,15 @@
-#Jiahang Li's User Page
+# Jiahang Li's User Page
 
-##My favorite programming language is C++
+## My favorite programming language is C++
+
+### Header 1
+#### Header 2
+
+**Bold** and _Italic_ and `Code` text
+*Italicized*
+~~Mistaken~~
+**This text is _extremely_ important**
+***All this text is important***
 
 >Shanghai
 
@@ -9,7 +18,7 @@ git status
 git add
 git commit
 ```
-Welcome to [my Github](https://github.com/Djokovic0311) .
+Welcome to [my Github](https://github.com/Djokovic0311 "悬停显示").
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
@@ -20,9 +29,6 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
 - Bulleted
 - List
@@ -30,7 +36,7 @@ Syntax highlighted code block
 1. Numbered
 2. List
 
-**Bold** and _Italic_ and `Code` text
+
 
 [Link](url) and ![Image](src)
 ```
