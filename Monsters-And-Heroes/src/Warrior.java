@@ -4,7 +4,7 @@ public class Warrior extends Hero implements HeroCreator{
         super();
     }
     public Warrior(int lvl, int hp, String name, int strength, int dex, int agl, int mana, int exp, int money) {
-        super((lvl, hp, name, strength, dex, agl, mana, exp, money);
+        super(lvl, hp, name, strength, dex, agl, mana, exp, money);
     }
 
     public Warrior createHero(String charInfo){

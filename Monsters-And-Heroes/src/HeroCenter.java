@@ -9,7 +9,15 @@ public class HeroCenter {
         Hero newHero;
         switch(type){
             case 2:
-                
+                newHero = new Sorcerer();
+                break;
+            case 3:
+                newHero = new Paladin();
+                break;
+            default:
+                newHero = new Warrior();
+                break;
         }
+        return newHero;
     }
 }
