@@ -27,4 +27,52 @@ public class Potion extends RPGItem{
         str+="Affinities: "+this.attrAffected+spaces;
         return str;
     }
+
+    public void applyPotion(Hero hero){
+        String[] affs = attrAffected.split("/");
+        for (String aff : affs) {
+            switch (aff) {
+                case "Health":
+                    hero.setHp(hero.getHp() + attIncrease);
+                    break;
+                case "Mana":
+                    hero.setMana(hero.getMana() + attIncrease);
+                    break;
+                case "Strength":
+                    hero.setStrength(hero.getStrength() + attIncrease);
+                    break;
+                case "Dexterity":
+                    hero.setDexterity(hero.getDexterity() + attIncrease);
+                    break;
+                case "Agility":
+                    hero.setAgility(hero.getAgility() + attIncrease);
+                    break;
+                case "All":
+                    hero.setHp(hero.getHp() + attIncrease);
+                    hero.setMana(hero.getMana() + attIncrease);
+                    hero.setStrength(hero.getDexterity() + attIncrease);
+                    hero.setDexterity(hero.getDexterity() + attIncrease);
+                    hero.setAgility(hero.getAgility() + attIncrease);
+                    break;
+            }
+        }
+
+    }
+
+
+    public int getAttIncrease() {
+        return attIncrease;
+    }
+
+    public String getAttrAffected() {
+        return attrAffected;
+    }
+
+    public void setAttIncrease(int attIncrease) {
+        this.attIncrease = attIncrease;
+    }
+
+    public void setAttrAffected(String attrAff) {
+        this.attrAffected = attrAff;
+    }
 }

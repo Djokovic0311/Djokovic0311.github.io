@@ -74,14 +74,27 @@ public class LegendBoard extends RPGBoard{
             }
         }
         //if the player has nowhere to go, generate a new board
-
+        if(!(checkRoute(defaultPartyLocX, defaultPartyLocY))){
+            initBoard();
+        }
+        updatePlayer(defaultPartyLocX, defaultPartyLocY);
     }
 
     //check if the party has a route to go
     public boolean checkRoute(int x, int y){
         //check the four adjacent Spaces to the player
-        if(x-1 >= 0 && board[x-1][y]!=null && ())
+        if(x-1 >= 0 && board[x-1][y]!=null && ((LegendSpace) board[x-1][y]).isWalkable){
+            return true;
+        }
+        else if(y-1 >= 0 && board[x][y-1]!= null &&((LegendSpace) board[x][y-1]).isWalkable){
+            return true;
+        }
+        else if(x+1 < boardSize && board[x+1][y]!=null && ((LegendSpace) board[x+1][y]).isWalkable){
+            return true;
+        }
+        else return y + 1 < boardSize && board[x][y+1] != null && ((LegendSpace) board[x][y+1]).isWalkable;
     }
+
     //check currennt Space valid
     public boolean canGo(int x, int y){
         if (x>=0 && x<board.length && y>=0 && y<board[0].length && ((LegendSpace)board[x][y]).isWalkable){
@@ -103,5 +116,11 @@ public class LegendBoard extends RPGBoard{
         else{
             ((MarketSpace)board[lastX][lastY]).resetIcon();
         }
+
+        ((LegendSpace)board[x][y]).setSpaceIcon(playerIcon);
+        //update latest location
+        lastX = x;
+        lastY = y;
     }
+
 }
