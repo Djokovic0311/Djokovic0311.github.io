@@ -1,2 +1,2 @@
-public class RPGGame {
+public class RPGGame extends Game{
 }
