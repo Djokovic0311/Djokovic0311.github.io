@@ -11,7 +11,7 @@ public class RPGGame extends Game{
     protected final String moveDOWN = "S";
     protected final String moveRIGHT = "D";
     protected final String showInfo = "I";
-    protected final String quitGama = "Q";
+    protected final String quitGame = "Q";
     protected final String showInv = "E";
     protected final String showMap = "M";
 
@@ -21,7 +21,7 @@ public class RPGGame extends Game{
     }
     public boolean checkValidOption(String option) {
         return (Objects.equals(option, moveUP) || Objects.equals(option, moveDOWN) ||Objects.equals(option, moveLEFT)
-        || Objects.equals(option, moveRIGHT) || Objects.equals(option, showInfo) || Objects.equals(option, quitGama)
+        || Objects.equals(option, moveRIGHT) || Objects.equals(option, showInfo) || Objects.equals(option, quitGame)
         || Objects.equals(option, showInv) || Objects.equals(option, showMap));
     }
 }
