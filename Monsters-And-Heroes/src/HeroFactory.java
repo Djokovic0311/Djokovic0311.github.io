@@ -45,30 +45,86 @@ public class HeroFactory extends RPGParty{
                 // add 2 exp
                 hero.setExp(hero.getExp() + 2);
                 // get gold and hp
-                int
+                int prevMoney = hero.getGold();
+                hero.setGold(prevMoney + (getHighestLvl() * 100));
+                hero.setHp(hero.getHp() + (hero.getHp() / 10));
+                //add 10 percent mana back
+                hero.setMana(hero.getMana() + (hero.getMana() / 10));
             }
         }
     }
 
-
-
-
-
-
-    @Override
-    public boolean allDead() {
-        return false;
+    //check for level up
+    public void checkLevelUp(){
+        for(Hero hero : heroParty) {
+            if(hero.checkLevelUp()) {
+                hero.levelUp();
+            }
+        }
     }
 
     @Override
-    public int numAlive() {
-        return 0;
+    public String toString(){
+        StringBuilder toPrint = new StringBuilder();
+        toPrint.append("\n");
+        toPrint.append("You curent hero party: \n");
+        for(Hero hero : heroParty) {
+            toPrint.append(hero).append("\n");
+            toPrint.append("\n");
+        }
+        return toPrint.toString();
     }
 
-    @Override
-    public int[] aliveIndexes() {
-        return new int[0];
+    //return true if all the heroes are dead
+    public boolean allDead(){
+        int count = 0;
+        for(Hero hero : heroParty) {
+            if(hero.isDead()) {
+                count++;
+            }
+        }
+        return count == heroParty.length;
     }
+
+    //get the number of alive heros
+    public int numAlive(){
+        int count =0;
+        for (Hero hero : heroParty) {
+            if(!(hero.isDead())) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    //return indexes of the living crearures
+    public int[] aliveIndexes(){
+        int[] alive = new int[numAlive()];
+        int count = 0;
+        for(int x = 0; x<heroParty.length; x++){
+            if(!(heroParty[x].isDead())){
+                alive[count] = x;
+                count++;
+            }
+        }
+        return alive;
+    }
+
+    //set the party's new position
+    public void setPos(int x, int y){
+        xLoc = x;
+        yLoc = y;
+    }
+
+    //get the highest level in the party
+    public int getHighestLvl(){
+        int highestLevel = 0;
+        for (Hero hero : heroParty) {
+            highestLevel = Math.max(highestLevel, hero.getLevel());
+        }
+        return highestLevel;
+    }
+
     //getters and setters
     public int getXLoc(){
         return xLoc;
